@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="133dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="41dp"
+        android:gravity="center"
+        android:text="Bem vindo"
+        android:textColor="#100909"
+        android:textColorHint="#0C0909"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#009688"
+        android:onClick="Entrar"
+        android:text="Entrar"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#673AB7"
+        android:textColorLink="#009688"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textSenha" />
+
+    <EditText
+        android:id="@+id/textSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="#120D0D"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEntrar"
+        app:layout_constraintStart_toStartOf="@+id/TextLogin"
+        app:layout_constraintTop_toBottomOf="@+id/TextLogin" />
+
+    <EditText
+        android:id="@+id/TextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="#0C0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/textSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="87dp"
+        android:backgroundTint="#009688"
+        android:onClick="Cadastro"
+        android:text="Realizar Cadastro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="Ainda não e cadastrado?"
+        android:textColor="#120B0B"
+        android:textColorHint="#0B0606"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:onClick="EsqueceuSenha"
+        android:text="Esqueceu a Senha?"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEntrar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

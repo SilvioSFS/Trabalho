@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".Cadastro">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="64dp"
+        android:text="Realize seu cadastro abaixo"
+        android:textColor="#0B0707"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:onClick="Usuario"
+        android:padding="16dp"
+        android:textColorHint="#0E0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/TextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:onClick="Email"
+        android:padding="16dp"
+        android:textColorHint="#0B0606"
+        app:layout_constraintStart_toStartOf="@+id/TextLogin"
+        app:layout_constraintTop_toBottomOf="@+id/TextLogin" />
+
+    <EditText
+        android:id="@+id/TextSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:onClick="Senha"
+        android:padding="16dp"
+        android:textColorHint="#0B0606"
+        app:layout_constraintStart_toStartOf="@+id/TextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/TextEmail" />
+
+    <Button
+        android:id="@+id/buttonCadastrar"
+        android:layout_width="107dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#009688"
+        android:onClick="Salvar"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextSenha" />
+</androidx.constraintlayout.widget.ConstraintLayout>
