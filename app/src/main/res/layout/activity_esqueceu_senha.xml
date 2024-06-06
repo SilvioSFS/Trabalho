@@ -24,9 +24,12 @@
 
     <EditText
         android:id="@+id/EmailRecuperacao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="265dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="39dp"
+        android:background="@drawable/logincertin"
+        android:backgroundTint="#F3F2F2"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
