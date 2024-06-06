@@ -58,7 +58,7 @@
         android:onClick="TrocarSenha"
         android:text="Salvar"
         android:textSize="20sp"
-        app:backgroundTint="#009688"
+        app:backgroundTint="#525555"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
