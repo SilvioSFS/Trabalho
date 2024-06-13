@@ -5,18 +5,20 @@
     android:layout_height="match_parent"
     tools:context=".PaginaInicial">
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button_add_product"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:iconifiedByDefault="false"
-        android:queryHint="Buscar produtos" />
+        android:text="Adicionar Produto"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <ListView
+        android:id="@+id/listview_products"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/searchView"
-        android:padding="8dp" />
+        android:layout_below="@+id/button_add_product"
+        android:layout_marginTop="16dp" />
 
 </RelativeLayout>
