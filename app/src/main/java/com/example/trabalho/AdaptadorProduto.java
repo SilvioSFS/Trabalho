@@ -7,9 +7,9 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import java.util.ArrayList;
 
-public class ProductAdapter extends ArrayAdapter<Product> {
+public class AdaptadorProduto extends ArrayAdapter<Product> {
 
-    public ProductAdapter(Context context, ArrayList<Product> products) {
+    public AdaptadorProduto(Context context, ArrayList<Product> products) {
         super(context, 0, products);
     }
 

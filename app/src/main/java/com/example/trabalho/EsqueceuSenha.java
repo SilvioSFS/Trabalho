@@ -37,14 +37,14 @@ public class EsqueceuSenha extends AppCompatActivity {
             trocarSenha.sendPasswordResetEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void unused) {
-                    Toast.makeText(EsqueceuSenha.this, "Reset password link has been sent to the registered e-mail", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EsqueceuSenha.this, "Link de recuperação enviado para seu email", Toast.LENGTH_SHORT).show();
                     Intent in = new Intent(EsqueceuSenha.this, Login.class);
                     startActivity(in);
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(EsqueceuSenha.this, "Error: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EsqueceuSenha.this, "Ocorreu um erro, tente novamente: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });
         }

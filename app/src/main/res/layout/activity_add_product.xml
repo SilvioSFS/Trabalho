@@ -3,22 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fundo"
     tools:context=".AddProductActivity">
 
     <EditText
         android:id="@+id/edittext_product_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nome do Produto"
-        android:layout_margin="16dp" />
+        android:layout_width="372dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/logincertin"
+        android:backgroundTint="#FBF6F6"
+        android:hint="Nome do Produto" />
 
     <EditText
         android:id="@+id/edittext_product_price"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Preço do Produto"
+        android:layout_width="372dp"
+        android:layout_height="44dp"
         android:layout_below="@+id/edittext_product_name"
-        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/logincertin"
+        android:backgroundTint="#EFEDED"
+        android:hint="Preço do Produto"
         android:inputType="numberDecimal" />
 
     <Button
