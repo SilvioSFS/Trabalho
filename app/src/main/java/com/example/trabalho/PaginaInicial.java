@@ -29,7 +29,7 @@ public class PaginaInicial extends AppCompatActivity {
         buttonAddProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PaginaInicial.this, AddProductActivity.class);
+                Intent intent = new Intent(PaginaInicial.this, AdicionarProduto.class);
                 startActivityForResult(intent, 1);
             }
         });

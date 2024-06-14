@@ -16,7 +16,7 @@
             android:name=".ItemProduto"
             android:exported="false" />
         <activity
-            android:name=".AddProductActivity"
+            android:name=".AdicionarProduto"
             android:exported="false" />
         <activity
             android:name=".PaginaInicial"
