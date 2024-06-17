@@ -32,10 +32,10 @@ public class AdicionarProduto extends AppCompatActivity {
 
                 if (!productName.isEmpty() && !productPriceString.isEmpty()) {
                     double productPrice = Double.parseDouble(productPriceString);
-                    Product newProduct = new Product(productName, productPrice);
+                    Produto novoProduto = new Produto(productName, productPrice);
 
                     Intent resultIntent = new Intent();
-                    resultIntent.putExtra("newProduct", newProduct);
+                    resultIntent.putExtra("novoProduto", novoProduto);
                     setResult(RESULT_OK, resultIntent);
                     finish();
                 }
