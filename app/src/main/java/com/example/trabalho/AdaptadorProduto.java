@@ -7,18 +7,18 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import java.util.ArrayList;
 
-public class AdaptadorProduto extends ArrayAdapter<Product> {
+public class AdaptadorProduto extends ArrayAdapter<Produto> {
 
-    public AdaptadorProduto(Context context, ArrayList<Product> products) {
-        super(context, 0, products);
+    public AdaptadorProduto(Context context, ArrayList<Produto> produtos) {
+        super(context, 0, produtos);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Product product = getItem(position);
+        Produto produto = getItem(position);
 
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.activity_item_product, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.activity_item_produto, parent, false);
         }
 
         TextView textViewName = convertView.findViewById(R.id.textview_product_name);
